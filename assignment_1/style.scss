@@ -21,6 +21,10 @@ $hoverBackground:#036;
 $navBackground:#093;
 $activeLink:#06F;
 
+@mixin padding($padding){
+    padding: $padding;
+}
+
 // general guides
 a {
 	color:$accent;
@@ -121,7 +125,7 @@ body {
 	
 	height:50px;
 	margin:0 auto;
-	padding:10px;
+	@include padding (10px);
 	text-align:center;
 	width:900px;
     
