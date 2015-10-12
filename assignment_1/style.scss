@@ -5,7 +5,7 @@
 	Email		:	christopher@edg3.co.uk
 	Website	:	http://www.edg3.co.uk/
 	
-	Colors modified by Sarah Ruhlman on August 30, 2015
+	Colors modified by Sarah Ruhlman September 2015
 */
 * {
 	border:0;
@@ -17,6 +17,9 @@
 $base:#000;
 $accent:#FFF;
 $maintxt:#999;
+$hoverBackground:#036;
+$navBackground:#093;
+$activeLink:#06F;
 
 // general guides
 a {
@@ -64,7 +67,7 @@ body {
 
 // navigation
 #navigation {
-	background:#093;
+	background:$navBackground;
 	border-right:1px solid $maintxt;
 	border-top:1px solid $accent;
 	border-bottom:1px solid $accent;
@@ -86,8 +89,8 @@ body {
 	text-align:center;
     }
     a:hover {
-	background:#036;
-	color:#06F;
+	background:$hoverBackground;
+	color:$activeLink;
     }
     .active {
 	background:#033;
@@ -121,7 +124,17 @@ body {
 	padding:10px;
 	text-align:center;
 	width:900px;
+    
+    h3 a {
+	color:$accent;
+	text-align:center;
+    }
+    h3 a:hover {
+	color:$activeLink;
+    }
 }
+
+
 
 
 // Added by Larry Ullman:
